@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title> sorteio </title>
+    <link rel="icon" href="images/icon.png">
+    <style>
+        h2{
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="resultadors.html" method="get">
+        <p><label for="cnome">Nome : </label> <input type="text" name="nome" size="50" maxlength="20"
+                placeholder="Nome Completo " required id="cnome" autocomplete="off"></p>
+        <p> Data de Nascimento : <input type="date" name="datanasc" min="2005-01-01" max="2023-12-31"></p>
+        <p> E-mail : <input type="email"></p>
+        <p> <input type="checkbox" name="inf" value="sim"> Quero receber informações sobre o ganhador por e-mail ! </p>
+        <p> Sexo : <input type="radio" name="sexo" value="fem" checked> Feminino <input type="radio" name="sexo"
+                value="masc"> Masculino </p>
+
+        <fieldset>
+            <legend> Endereço </legend>
+            <p> Logradouro : <input type="text" name="Logradouro" size="50"></p>
+            <p> Bairro : <input type="text" name="bairro" size="30"></p>
+            <p> Estados : <select name="estados">
+                    <option value="SP"> São Paulo </option>
+                    <option value="RJ"> Rio de Janeiro </option>
+                    <option value="MG"> Minas Gerais </option>
+                    <option value="ES"> Espírito Santo </option>
+                    <option value="RS" selected> Rio Grande do Sul </option>
+                    <option value="SC"> Santa Catarina </option>
+                    <option value="AC"> Acre </option>
+                    <option value="AL"> Alagoas </option>
+                    <option value="AP"> Amapá </option>
+                    <option value="AM"> Amazonas </option>
+                    <option value="BA"> Bahia </option>
+                    <option value="CA"> Ceará </option>
+                    <option value="GO"> Goiás </option>
+                    <option value="MR"> Maranhão </option>
+                    <option value="MT"> Mato Grosso </option>
+                    <option value="MS"> Mato Grosso do Sul </option>
+                    <option value="PA"> Pará </option>
+                    <option value="PI"> Paraíba </option>
+                    <option value="PE"> Pernambuco </option>
+                    <option value="PE"> Piauí </option>
+                    <option value="RN"> Rio Grande do Norte </option>
+                    <option value="RD"> Rondônia </option>
+                    <option value="RR"> Roraima </option>
+                    <option value="SE"> Sergipe </option>
+                    <option value="TO"> Tocantins </option>
+                </select>
+        </fieldset>
+        <p> Diga nós o porque você deveria ganhar! :</p>
+        <p> <textarea name="sugestao" rows="5" cols="60"> </textarea> </p>
+
+
+
+        <p> <input type="reset" value="Cancelar"></p>
+        <p> <input type="submit" value="Enviar Dados"></p>
+    </form>
+<br>
+<br>
+    <h2><a href="index.html">Voltar</a></h2>
+
+</body>
+
+</html>
